@@ -1,0 +1,89 @@
+@import '../../styles';
+
+nav {
+    padding: $padding1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    border-bottom: 1px solid $grayColor;
+
+    .navbar-nav {
+       .nav-item {
+           margin-right: 20px;
+            a {
+                @include font4;
+                font-weight: 500;
+                color: $darkFont;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .toggled-navbar-list {
+        list-style: none;
+        position: absolute;
+        width: 96%;
+        top: 80px;
+        
+
+        .nav-item {
+            margin-right: 20px;
+             a {
+                 @include font4;
+                 font-weight: 500;
+                 color: $darkFont;
+                 text-transform: uppercase;
+             }
+         }
+    }
+
+    .button {
+        border: none;
+        background: none;
+        width: 43px;
+        height: 30px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.2s ease-in-out;
+
+        span {
+            background: $darkFont;
+            width: 100%;
+            height: 4px;
+            border-radius: 10px;
+        }
+    }
+
+    .button-toggled {
+        border: none;
+        background: none;
+        width: 43px;
+        height: 30px;
+        padding: 13px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.2s ease-in-out;
+
+        span {
+            background: $darkFont;
+            width: 100%;
+            height: 4px;
+            border-radius: 10px;
+        }
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        padding: 0 20px;
+    }
+}

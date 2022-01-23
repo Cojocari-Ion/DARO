@@ -1,0 +1,35 @@
+//COLORS
+
+$darkFont: #001446;
+$grayColor: #dadada;
+
+//FONTS
+
+@mixin font1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@mixin font2 {
+    font-size: 37px;
+    font-weight: 500;
+}
+
+@mixin font3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+@mixin font4 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+@mixin font4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+// paddings 
+$padding1: 0 120px;
+
