@@ -1,15 +1,28 @@
 import './App.css';
 import React from 'react';
 import Nav from './components/Navbar/Nav';
-import Hero from './components/Hero/Hero';
+import Home from './Home';
+import Portfolio from './pages/Portfolio';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
 
 
 function App() {
+
   return (
-    <div className="App">
-      <Nav/>
-      <Hero/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Routes>
+          <Route path="/" exact element={<Home/>} />
+          <Route path='/portfolio' element={<Portfolio/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

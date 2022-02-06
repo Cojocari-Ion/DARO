@@ -1,0 +1,120 @@
+@import '../../styles';
+
+.projects {
+    @include sectionSizes;
+    position: relative;
+    margin-top: 40px;
+
+    .floated-bg {
+        position: absolute;
+        width: 100vw;
+        height: 70vh;
+        background: $daroYellow;
+        top: 0;
+        right: 120px;
+        overflow: hidden; 
+    }
+
+    span {
+        position: absolute;
+        top: 10px;
+        left: 420px;
+        font-size: 100px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #D0D225;
+        opacity: 0.3;
+    }
+
+    .elements {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 120px;
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            @include font1;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
+            width: 100%;
+            height: 458px;
+            margin-top: 50px;
+            
+            .blured {
+                filter: blur(8px);
+            }
+            .project {
+                background-size: cover;
+                background-position: center center;
+                -webkit-box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.2); 
+                box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.2);
+
+                a {
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $daroWhite;
+                    text-transform: uppercase;
+                    transition:  0.3s all;
+                    backdrop-filter: blur( 5px );
+                    font-weight: 800;
+
+                    .text {
+                        font-weight: 800;
+                        @include font3;
+                    }
+                }
+
+                a:hover {
+                    opacity: 1;
+                    transition:  0.3s all;
+                }
+            }
+
+            .dulcinella {
+                grid-column: 1 / span 2;
+            }
+
+            .inamstro {
+                grid-column: 3 / span 2;
+            }
+        }
+
+        .link {
+            text-decoration: none;
+        }
+        button {
+            @include button;
+            @include font3;
+            text-decoration: none;
+            display: block;
+            padding: 5px 15px;
+            margin: 30px auto;
+        }
+
+        button:hover {
+            @include buttonHovered;
+        }
+    }
+
+
+
+
+}

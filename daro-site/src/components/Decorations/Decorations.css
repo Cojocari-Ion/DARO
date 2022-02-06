@@ -1,0 +1,28 @@
+.decorations .elipse {
+  width: 70px;
+  height: 70px;
+  background-color: #0648ec;
+  position: absolute;
+  top: 30px;
+  left: 900px;
+  border-radius: 40px;
+}
+
+.decorations .arrow {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+}
+
+.decorations .sphere {
+  position: absolute;
+  top: 600px;
+  left: -150px;
+}
+
+.decorations .diamants {
+  position: absolute;
+  top: 670px;
+  right: -150px;
+}
+/*# sourceMappingURL=Decorations.css.map */

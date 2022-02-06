@@ -1,1 +1,185 @@
-/* No CSS *//*# sourceMappingURL=Hero.css.map */
+.Hero {
+  padding: 0 120px;
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+}
+
+.Hero .hero-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 63%;
+  width: 100%;
+}
+
+.Hero .hero-top .left {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Hero .hero-top .left h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+  color: #001446;
+  font-weight: 700;
+}
+
+.Hero .hero-top .left h1 span {
+  color: #0648ec;
+}
+
+.Hero .hero-top .left p {
+  font-size: 28px;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+
+.Hero .hero-top .left button {
+  width: 300px;
+  height: 80px;
+  font-size: 37px;
+  font-weight: 500;
+  background: #0648ec;
+  color: #f9f9f9;
+  border: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 8px 8px 0px 0px #F2F442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 8px 8px 0px 0px #F2F442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.Hero .hero-top .left button:hover {
+  color: #0648ec;
+  background: #f9f9f9;
+  -webkit-box-shadow: 0px 0px 0px 0px #F2F442, 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 0px 0px #F2F442, 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.Hero .hero-top .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.Hero .hero-top .right-side img {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transform: translateY(26px);
+          transform: translateY(26px);
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Hero .hero-bot {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+
+.Hero .hero-bot .translated {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.Hero .hero-bot .translated .service {
+  color: #001446;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 250px;
+  height: 270px;
+  padding: 20px;
+  background: #f9f9f9;
+  -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+  box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+}
+
+.Hero .hero-bot .translated .service .icon-container {
+  min-width: 140px;
+  min-height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  margin: 0;
+}
+
+.Hero .hero-bot .translated .service h3 {
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.Hero .hero-bot .translated:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+/*# sourceMappingURL=Hero.css.map */

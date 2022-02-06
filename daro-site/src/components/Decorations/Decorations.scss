@@ -1,0 +1,33 @@
+@import '../../styles';
+
+.decorations {
+
+    .elipse {
+        width: 70px;
+        height: 70px;
+        background-color: $daroBlue;
+        position: absolute;
+        top: 30px;
+        left: 900px;
+        border-radius: 40px;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 110px;
+        left: 10px;
+    }
+
+    .sphere {
+        position: absolute;
+        top: 600px;
+        left: -150px;
+    }
+
+    .diamants {
+        position: absolute;
+        top: 670px;
+        right: -150px;
+    }
+
+}
