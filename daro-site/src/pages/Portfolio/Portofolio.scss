@@ -1,0 +1,82 @@
+@import '../../styles';
+
+.portfolio {
+    @include sectionSizes;
+    
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 50px;
+        color: $darkFont;
+        font-size: 67px;
+        padding: 0;
+        transform: translateX(-7px);
+    }
+
+    .portofolio-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        height: 1500px;
+
+        .item {
+            background-color: rgb(150, 150, 150);
+            background-size: cover;
+            background-position: center center; 
+            box-shadow: 2px 2px 9px 0 rgba(0,0,0,0.2);
+
+            .a {
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: $daroWhite;
+                transition:  0.3s all;
+                backdrop-filter: blur( 5px );
+                font-weight: 800;
+
+                h3 {
+                    @include font4;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                .services {
+                    @include font5;
+                    font-weight: 300;
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+
+            .a:hover {
+                opacity: 1;
+                transition:  0.3s all;
+            }
+        }
+
+        .dulcinella {
+            grid-column: 1 / 3;
+        }
+
+        .loial {
+            grid-column: 3 / 5;
+            grid-row: 1 / 3;
+        }
+
+        .infinity {
+            grid-area: 3 / 1 / 5 / 2;
+        }
+
+        .inamstro {
+            grid-area: 3 / 3 / 4 / 5;
+        }
+    }
+}

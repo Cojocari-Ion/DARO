@@ -35,11 +35,11 @@ const Nav = () => {
     const nav = document.getElementById('nav');
 
   return (
+      
     <motion.nav 
     initial={{opacity: 0}}
     animate={{opacity: 1, y:0}}
     transition={{duration: 0.8}}
-  
     id={`nav`} className={`navbar nav-hidden navbar-expand-lg d-flex justify-content-between`}>
         
         <Link to='/' className="home link navbar-brand"><img src='assets/Logo.png' alt='logo' width='110px'></img></Link>

@@ -6,7 +6,9 @@ import { motion } from 'framer-motion';
 const Decorations = () => {
 
   const [offsetY, setOffsetY] = useState(0);
+
   const scrollHandler = () => {
+    
     setOffsetY(window.scrollY);
     
   };

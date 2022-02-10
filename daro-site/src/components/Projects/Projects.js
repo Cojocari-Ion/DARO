@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import { Link } from "react-router-dom";
+import { projects } from '../../Projects';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -10,44 +11,6 @@ import {  useViewportScroll } from 'framer-motion';
 import { useTransform } from 'framer-motion';
 
 const Projects = () => {
-
-    const projects = [
-        {
-            id: 0,
-            title: 'dulcinella',
-            image: 'assets/projects/dulcinella.png'
-        },
-
-        {
-            id: 1,
-            title: 'loial',
-            image: 'assets/projects/loial.png'
-        },
-
-        {
-            id: 2,
-            title: 'babyboom',
-            image: 'assets/projects/babyboom.png'
-        },
-
-        {
-            id: 3,
-            title: 'bomba',
-            image: 'assets/projects/bomba.png'
-        },
-
-        {
-            id: 4,
-            title: 'trend',
-            image: 'assets/projects/trend.png'
-        },
-
-        {
-            id: 5,
-            title: 'inamstro',
-            image: 'assets/projects/inamstro.png'
-        }
-    ]
 
 
   return (
@@ -65,14 +28,15 @@ const Projects = () => {
             <div className="project-grid">
                 {projects.map((project) => (
                     <div style={{backgroundImage: `url(${project.image})`}} className={`project ${project.title}`}>
-                        <a href="#">
-                            <p className='text'>vezi proiectul</p>
-                        </a>
+                        <Link className='a' to={`/projects/${project.id}`}>
+                            <h3>{project.title}</h3>
+                            <p className='services'>{project.services}</p>
+                        </Link>
                     </div>
                 ))}
             </div>
             
-            <Link className='link' to='/portofolio'>
+            <Link className='link' to='/portfolio'>
                 <button type='button'>vezi totul</button>
             </Link>
 

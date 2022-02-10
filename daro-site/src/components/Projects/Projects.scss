@@ -61,28 +61,36 @@
                 -webkit-box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.2); 
                 box-shadow: 4px 4px 10px -1px rgba(0,0,0,0.2);
 
-                a {
+                .a {
                     opacity: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(0, 0, 0, 0.4);
+                    background-color: rgba(0, 0, 0, 0.7);
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     text-decoration: none;
                     color: $daroWhite;
-                    text-transform: uppercase;
                     transition:  0.3s all;
                     backdrop-filter: blur( 5px );
                     font-weight: 800;
 
-                    .text {
-                        font-weight: 800;
+                    h3 {
                         @include font3;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    .services {
+                        @include font5;
+                        font-weight: 300;
+                        width: 300px;
+                        text-align: center;
                     }
                 }
 
-                a:hover {
+                .a:hover {
                     opacity: 1;
                     transition:  0.3s all;
                 }
@@ -113,8 +121,5 @@
             @include buttonHovered;
         }
     }
-
-
-
 
 }

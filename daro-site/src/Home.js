@@ -6,6 +6,7 @@ import WhyUs from './components/WhyUs + Clients/WhyUs';
 import Slogan from './components/Slogan/Slogan';
 import OurPage from './components/ourPage/OurPage';
 import Projects from './components/Projects/Projects';
+import ContactForm from './components/ContactForm/ContactForm';
 
 const Home = () => {
   return ( 
@@ -18,6 +19,7 @@ const Home = () => {
     <Slogan/>
     <OurPage/>
     <Projects/>
+    <ContactForm />
   </div>
   );
 };
