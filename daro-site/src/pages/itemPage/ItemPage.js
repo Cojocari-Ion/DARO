@@ -13,6 +13,12 @@ const ItemPage = () => {
 
     <div className='project-page'>
       <h1>{`hello, I am item page ${project.tittle}`}</h1>
+      <ul>
+        {project.services.map((item) => (
+            <li>{item}</li>
+        ))}
+
+      </ul>
     </div>
   
   );

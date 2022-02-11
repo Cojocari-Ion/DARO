@@ -16,10 +16,10 @@
     .portofolio-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 15px;
         grid-row-gap: 15px;
-        height: 1500px;
+        height: 1750px;
 
         .item {
             background-color: rgb(150, 150, 150);
@@ -46,6 +46,8 @@
                     @include font4;
                     font-weight: 700;
                     text-transform: uppercase;
+                    text-align: center;
+                    
                 }
 
                 .services {
@@ -53,6 +55,22 @@
                     font-weight: 300;
                     width: 300px;
                     text-align: center;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+                    text-align: center;
+                    @include font5;
+                    font-weight: 300;
+
+                    li {
+                        list-style: none;
+                        transform: translateX(-17px);
+                    }
                 }
             }
 
@@ -77,6 +95,10 @@
 
         .inamstro {
             grid-area: 3 / 3 / 4 / 5;
+        }
+
+        .UDS {
+            grid-area: 5 / 1 / 7 / 3;
         }
     }
 }

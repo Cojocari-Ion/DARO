@@ -43,8 +43,7 @@ const OurPage = () => {
 
   ]
 
-  const [ref, inView] = useInView({threshold: 0.4 
-  });
+  const [ref, inView] = useInView({threshold: 0.4});
 
   const linksAnimation = useAnimation();
 

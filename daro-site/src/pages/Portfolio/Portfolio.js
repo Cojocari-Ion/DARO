@@ -15,7 +15,11 @@ const Portfolio = () => {
             <div style={{backgroundImage: `url(${item.image})`}} className={`item ${item.tittle}`}>
                 <Link className='a' to={`/project/${item.id}`}>
                     <h3>{item.tittle}</h3>
-                    <p className='services'>{item.services}</p>
+                    <ul>
+                        {item.services.map((service) => (
+                            <li>{service}</li>
+                        ))}
+                    </ul>
                 </Link>
             </div>
         ))}
