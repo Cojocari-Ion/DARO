@@ -20,7 +20,7 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="/" exact element={<Home/>} />
+          <Route path="/"  element={<Home/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
           <Route path ='/projects/:id' element={<ProjectPage/>} />
           <Route path='/project/:id' element={<ItemPage /> } />
