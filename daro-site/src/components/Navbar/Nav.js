@@ -35,7 +35,7 @@ const Nav = () => {
     const nav = document.getElementById('nav');
 
   return (
-      
+
     <motion.nav 
     initial={{opacity: 0}}
     animate={{opacity: 1, y:0}}
@@ -49,14 +49,13 @@ const Nav = () => {
             <ul className={toggleMenu? 'toggled-navbar-list': 'navbar-nav' }>
                 
                 <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">Home</a>
+                    <Link to='/' className="nav-link" >Acasă</Link>
                 </li>
+
                 <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                    <Link to='/portfolio' className="nav-link">Portofoliu</Link>
                 </li>
-                <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-                </li>
+
                 
             </ul> 
         )}

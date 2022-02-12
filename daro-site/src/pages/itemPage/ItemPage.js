@@ -1,6 +1,9 @@
 import React from 'react';
 import { portofolioItems } from '../../portofolioItems';
 import { useParams } from 'react-router-dom';
+import './ItemPage.css'
+
+import HeaderSection from './sections/HeaderSection';
 
 
 const ItemPage = () => {
@@ -12,13 +15,9 @@ const ItemPage = () => {
   return (
 
     <div className='project-page'>
-      <h1>{`hello, I am item page ${project.tittle}`}</h1>
-      <ul>
-        {project.services.map((item) => (
-            <li>{item}</li>
-        ))}
 
-      </ul>
+        <HeaderSection project={project} />
+
     </div>
   
   );

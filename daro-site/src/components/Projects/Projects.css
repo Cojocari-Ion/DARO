@@ -16,6 +16,8 @@
   background: #F2F442;
   top: 0;
   overflow-x: hidden;
+  -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
+  box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
 }
 
 .projects .elements {

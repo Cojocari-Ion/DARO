@@ -127,21 +127,22 @@ const WhyUs = () => {
 
         <div animate={containerAnimation} transition={{duration: 1}} className={`container floated-${direction}`}>
             {motives.map((item)=> (
-                <motion.div whileHover={{ y: -15, }} animate={animation} transition={{ duration: item.delay }}  className='motiv'>
+                <motion.div key={item.id}  animate={animation} transition={{ duration: item.delay }}  className='motiv'>
+                    <motion.div whileHover={{ y: -15, }} transition={{duration: 0.1, delay: 0}} className='hover-motion'>
+                        <span>{item.number}</span>
 
-                    <span>{item.number}</span>
+                        <div className='content'>
+                            
+                            <h3>
+                                {item.tittle}
+                            </h3>
 
-                    <div className='content'>
-                        
-                        <h3>
-                            {item.tittle}
-                        </h3>
+                            <p>
+                                {item.text}
+                            </p>
 
-                        <p>
-                            {item.text}
-                        </p>
-
-                    </div>
+                        </div>
+                    </motion.div>
                 </motion.div>
             ))}
         </div>

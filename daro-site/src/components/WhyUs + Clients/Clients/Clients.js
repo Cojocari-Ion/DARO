@@ -10,9 +10,9 @@ const Clients = () => {
 
   const handleClick = (direction) => {
     if(direction === 'left') {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2)
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 3)
     } else {
-      setSlideIndex(slideIndex >= 2 ? 0 : slideIndex + 1)
+      setSlideIndex(slideIndex >= 3 ? 0 : slideIndex + 1)
     };
   };
 
@@ -92,6 +92,26 @@ const Clients = () => {
 
             <div className='newton-container logo-container'>
               <img className='newton-logo' src='assets/clients/newton.png' width='100px' alt='newton'></img>
+            </div>
+
+          </div>
+
+          <div className='slider-path'>
+
+            <div className='logo-container'>
+              <img src='assets/clients/newton-botanica.png' alt='inamstro'></img>
+            </div>
+
+            <div className='logo-container'>
+              <img src='assets/clients/uds.png' alt='infinity'></img>
+            </div>
+
+            <div className='logo-container'>
+              
+            </div>
+
+            <div className='newton-container logo-container'>
+              
             </div>
 
           </div>

@@ -2,16 +2,16 @@ import React from 'react';
 import ProjectColumn from './ProjectColumn/ProjectColumn';
 import './Projects.css';
 import { Link } from "react-router-dom";
-
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { useAnimation } from 'framer-motion';
-import {  useViewportScroll } from 'framer-motion';
-import { useTransform } from 'framer-motion';
 
 const Projects = () => {
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
   return (
     
@@ -37,9 +37,9 @@ const Projects = () => {
                     <ProjectColumn />
                 </div>
 
-                <div className="sides right">
+                <div data-aos-duration="1000" data-aos-offset="300" data-aos="fade-left"  className="sides right">
                     <Link className='link' to='/portfolio'>
-                        <span>vezi <br /> <span className='blue'>toate proiectele</span> <br /> DARO agency </span> 
+                        <span>vezi <br /><span className='blue'>toate proiectele</span> <br /> DARO agency </span> 
                     </Link>
                 </div>
 

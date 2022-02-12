@@ -7,8 +7,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
-import { useViewportScroll } from 'framer-motion';
-import { useTransform } from 'framer-motion';
+
 
 const ContactForm = () => {
 
@@ -26,6 +25,40 @@ const ContactForm = () => {
      e.target.reset();
   };
 
+  const smallTextAnimation = useAnimation();
+  const largeTextAnimation = useAnimation();
+
+  const [ref, inView] = useInView({threshold: 0.4});
+
+  useEffect(() => {
+
+    if(inView) {
+      smallTextAnimation.start({
+        translateY: 0,
+        opacity: 1
+      })
+
+      largeTextAnimation.start({
+        translateY: 0,
+        opacity: 1
+      })
+    }
+
+    if(!inView) {
+
+      smallTextAnimation.start({
+        translateY: '-10px',
+        opacity: 0
+      })
+
+      largeTextAnimation.start({
+        translateY: '30px',
+        opacity: 0
+      })
+    }
+  }, [inView])
+
+
   return (
 
   <div className='contact-section'>
@@ -34,8 +67,8 @@ const ContactForm = () => {
         
       </div>
 
-      <div className="elements">
-        <h3>Completează formularul și pune bazele <br/> <span>unui <span className='yellow'>parteneriat durabil</span> </span> </h3>
+      <div ref={ref} className="elements">
+        <h3> <motion.span transition={{ duration: 0.2 }} animate={smallTextAnimation} className="small-text">Completează formularul și pune bazele</motion.span>  <br/> <motion.span transition={{ duration: 0.4 }} animate={largeTextAnimation} className='large-text'> <span>unui</span>  <span className='yellow'> parteneriat durabil</span> </motion.span> </h3>
 
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
 

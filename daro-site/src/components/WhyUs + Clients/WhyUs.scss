@@ -51,43 +51,51 @@
             display: flex;
             flex-direction: row;
             
+            
             .motiv {
-                background: $daroWhite;
                 position: relative;
                 min-width: 433px;
                 max-width: 433px;
                 height: 256px;
                 margin-right: 20px;
-                padding: 30px;
-                -webkit-box-shadow: 4px 4px 37px 5px rgba(0,0,0,0.18); 
-                box-shadow: 4px 4px 37px 5px rgba(0,0,0,0.18);
-                transition: ease-in-out 0.3s;
+            
+
+                .hover-motion {
+                    background: $daroWhite;
+                    min-width: 100%;
+                    min-height: 100%;
+                    padding: 30px;
+                    -webkit-box-shadow: 4px 4px 37px 5px rgba(0,0,0,0.18); 
+                    box-shadow: 4px 4px 37px 5px rgba(0,0,0,0.18);
+                    transition: ease-in-out 0.3s;
+
+                    span {
+                        position: absolute;
+                        font-size: 266px;
+                        opacity: 0.04;
+                        font-weight: 800;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 0.75;
+                        cursor: default;
+                    }
+    
+                    h3 {
+                        @include font3;
+                        font-weight: 700;
+                        color: $daroBlue;
+                        text-transform: uppercase;
+                    }
+    
+                    p {
+                        font-size: 15;
+                        font-weight: 500;
+                        color: $darkFont;
+                    }
+                }
                
-                span {
-                    position: absolute;
-                    font-size: 266px;
-                    opacity: 0.04;
-                    font-weight: 800;
-                    bottom: 0;
-                    left: 0;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 0.75;
-                    cursor: default;
-                }
-
-                h3 {
-                    @include font3;
-                    font-weight: 700;
-                    color: $daroBlue;
-                    text-transform: uppercase;
-                }
-
-                p {
-                    font-size: 15;
-                    font-weight: 500;
-                    color: $darkFont;
-                }
             }
 
             .motiv:hover {

@@ -4,7 +4,7 @@
     position: relative;
     width: 100vw;
     height: 680px;
-    
+    margin-top: 70px;
 
     .floated-bg {
         position: absolute;
@@ -29,17 +29,37 @@
             @include font3;
             color: $daroWhite;
             margin-top: 30px;
+            width: 100%;
+            
+            
 
             span {
+                display: block;
+                width: 100%;
+                
+            }
+
+            .large-text {
                 @include font1;
                 text-transform: uppercase;
                 font-weight: 700;
-                line-height: 60px;
+                line-height: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                
+                span {
+                    width: auto;
+                    margin-left: 20px;
+                }
 
                 .yellow {
                     color: $daroYellow;
                 }
             }
+
         }
 
         .contact-form {
@@ -47,7 +67,7 @@
             height: 340px;
             background: $daroWhite;
             box-shadow: 4px 4px 17px 1px rgba(6,72,236,0.25);
-            margin-top: 40px;
+            margin-top: 60px;
 
             .form-container {
                 display: flex;

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,eAAe,CAAC;ECwDZ,OAAO,EAMA,CAAC,CAAC,KAAK;EALd,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,KAAK;CD7Cf",
+    "sources": [
+        "HeaderSection.scss",
+        "../../../styles.scss"
+    ],
+    "names": [],
+    "file": "HeaderSection.css"
+}

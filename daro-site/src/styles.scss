@@ -55,7 +55,7 @@ $grayColor: #dadada;
 
 // paddings & sizes
 @mixin sectionSizes {
-    
+
     padding: $padding1;
     min-height: 730px;
     width: 100vw;
@@ -63,4 +63,6 @@ $grayColor: #dadada;
 }
 
 $padding1: 0 120px;
+
+$floats: 120px;
 

@@ -2,6 +2,7 @@
   position: relative;
   width: 100vw;
   height: 680px;
+  margin-top: 70px;
 }
 
 .contact-section .floated-bg {
@@ -29,17 +30,40 @@
   font-weight: 500;
   color: #f9f9f9;
   margin-top: 30px;
+  width: 100%;
 }
 
 .contact-section .elements h3 span {
+  display: block;
+  width: 100%;
+}
+
+.contact-section .elements h3 .large-text {
   font-size: 50px;
   font-weight: 500;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
-.contact-section .elements h3 span .yellow {
+.contact-section .elements h3 .large-text span {
+  width: auto;
+  margin-left: 20px;
+}
+
+.contact-section .elements h3 .large-text .yellow {
   color: #F2F442;
 }
 
@@ -49,7 +73,7 @@
   background: #f9f9f9;
   -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
           box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .contact-section .elements .contact-form .form-container {
