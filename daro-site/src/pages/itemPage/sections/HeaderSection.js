@@ -2,6 +2,7 @@ import React from 'react';
 import './HeaderSection.css';
 
 
+
 const HeaderSection = ({project}) => {
 
     
@@ -10,6 +11,12 @@ const HeaderSection = ({project}) => {
       <div className="header-section">
           
         <div className="decoration">
+
+            <div className="flexible-container">
+
+                <img className='circle' src="assets/project-page-deco/dottedcircle.png" alt="circle" />
+
+            </div>
 
         </div>
 
