@@ -1,9 +1,8 @@
 import React from 'react';
 import { portofolioItems } from '../../portofolioItems';
 import { useParams } from 'react-router-dom';
-import './ItemPage.css'
-
-import HeaderSection from './sections/HeaderSection';
+import './ItemPage.css';
+import HeaderSection from './HeaderSection/HeaderSection';
 
 
 const ItemPage = () => {

@@ -3,6 +3,7 @@ import './Nav.css'
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom"; 
+import logo from './logo/Logo.png'
 
 
 const Nav = () => {
@@ -42,7 +43,7 @@ const Nav = () => {
     transition={{duration: 0.8}}
     id={`nav`} className={`navbar nav-hidden navbar-expand-lg d-flex justify-content-between`}>
         
-        <Link to='/' className="home link navbar-brand"><img src='assets/Logo.png' alt='logo' width='110px'></img></Link>
+        <Link to='/' className="home link navbar-brand"><img src={logo} alt='logo' width='110px'></img></Link>
         
         {(toggleMenu || screenWidth > 1000) && (
 
