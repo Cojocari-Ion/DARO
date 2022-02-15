@@ -11,6 +11,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Svg from './Svg';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Nav />
+        <Svg />
         <Routes>
           <Route path="/"  element={<Home/>} />
           <Route path='/portfolio' element={<Portfolio/>} />

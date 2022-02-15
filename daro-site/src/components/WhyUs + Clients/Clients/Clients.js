@@ -71,7 +71,7 @@ const Clients = () => {
             </div>
 
             <div className='logo-container'>
-              <img src='assets/clients/casadeltabaco.png' alt='casadeltabaco'></img>
+              <img src='assets/clients/tabaco.png' alt='casadeltabaco'></img>
             </div>
 
           </div>
@@ -83,7 +83,7 @@ const Clients = () => {
             </div>
 
             <div className='logo-container'>
-              <img src='assets/clients/infinty.png' alt='infinity'></img>
+              <img src='assets/clients/infinity.png' alt='infinity'></img>
             </div>
 
             <div className='logo-container'>

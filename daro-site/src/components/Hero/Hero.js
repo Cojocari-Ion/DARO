@@ -44,6 +44,7 @@ const Hero = () => {
   return (
      <div className='Hero'>
 
+
         <div className='hero-top'>
 
             <div className='side left'>
@@ -64,7 +65,7 @@ const Hero = () => {
 
 
             <div className='side right-side'>
-                <img src='assets/forme geometrice DARO-01.png'  alt='desen'></img>
+                
             </div>
 
         </div>

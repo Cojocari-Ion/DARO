@@ -61,9 +61,9 @@ const Portfolio = () => {
 
         <div className="portofolio-grid">
             {portofolioItems.map((item) => (
-                <div data-aos-duration="300" data-aos="fade-in" style={{backgroundImage: `url(${item.image})`}} className={`item ${item.tittle}`}>
+                <div data-aos-duration="300" data-aos="fade-in" style={{backgroundImage: `url(${item.image})`}} className={`item ${item.title}`}>
                     <Link className='a' to={`/project/${item.id}`}>
-                        <h3>{item.tittle}</h3>
+                        <h3>{item.title}</h3>
                         <ul>
                             {item.services.map((service) => (
                                 <li>{service}</li>
