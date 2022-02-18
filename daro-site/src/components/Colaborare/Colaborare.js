@@ -1,12 +1,10 @@
 import React from 'react';
 import './Colaborare.css';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import ColabItems from './ColabItems/ColabItems';
-
-
 
 
 const Colaborare = () => {
@@ -72,9 +70,7 @@ const Colaborare = () => {
         <ColabItems />
 
       </div> 
-
-      
-
+                                     
     </div>
   );
 };

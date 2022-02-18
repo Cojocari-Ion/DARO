@@ -17,7 +17,7 @@
     height: 63%;
     width: 100%;
 
-    .left {
+    .left-side {
       padding-top: 100px;
       display: flex;
       flex-direction: column;
@@ -29,6 +29,7 @@
         @include font1;
         color: $darkFont;
         font-weight: 700;
+
         span {
           color: $daroBlue;
         }
@@ -56,11 +57,9 @@
       flex-direction: row-reverse;
       align-items: flex-end;
 
-      img {
-        transform: translateX(50px);
-        transform: translateY(26px);
+      .header-anim {
         width: 400px;
-        object-fit: cover;
+        margin-top: 50px;
       }
     }
   }

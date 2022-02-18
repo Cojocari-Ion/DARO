@@ -40,7 +40,7 @@ const Nav = () => {
     <motion.nav 
     initial={{opacity: 0}}
     animate={{opacity: 1, y:0}}
-    transition={{duration: 0.8}}
+    transition={{duration: 0.8, delay: 5}}
     id={`nav`} className={`navbar nav-hidden navbar-expand-lg d-flex justify-content-between`}>
         
         <Link to='/' className="home link navbar-brand"><img src={logo} alt='logo' width='110px'></img></Link>

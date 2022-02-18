@@ -1,5 +1,6 @@
 .projects {
   padding: 0 120px;
+  height: 730px;
   min-height: 730px;
   width: 100vw;
   position: relative;
@@ -13,7 +14,7 @@
   position: sticky;
   width: 100vw;
   height: 730px;
-  background: #F2F442;
+  background: #f2f442;
   top: 0;
   overflow-x: hidden;
   -webkit-box-shadow: 4px 4px 17px 1px rgba(6, 72, 236, 0.25);

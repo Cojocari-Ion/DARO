@@ -11,16 +11,18 @@ import ContactForm from './components/ContactForm/ContactForm';
 const Home = () => {
   return ( 
   
-  <div className="home">
-    <Decorations/>
-    <Hero/>
-    <Colaborare/>
-    <WhyUs />
-    <Slogan/>
-    <OurPage/>
-    <Projects/>
-    <ContactForm />
-  </div>
+    <div className="home">
+      
+      <Decorations/>
+      <Hero/>
+      <Colaborare/>
+      <WhyUs />
+      <Slogan/>
+      <OurPage/>
+      <Projects/>
+      <ContactForm />
+    </div>
+
   );
 };
 

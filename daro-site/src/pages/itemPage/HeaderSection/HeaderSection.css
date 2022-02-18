@@ -1,5 +1,6 @@
 .header-section {
   padding: 0 120px;
+  height: 730px;
   min-height: 730px;
   width: 100vw;
   position: relative;
@@ -25,7 +26,7 @@
 }
 
 .header-section .decoration .flexible-container .dotted {
-  top: -120px;
+  top: -150px;
   right: -200px;
   opacity: 0.1;
   -webkit-animation: rotation 140s linear infinite;
@@ -102,7 +103,7 @@
 }
 
 .header-section .elements h2:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 100%;
   -webkit-transform: scaleX(0);

@@ -1,5 +1,6 @@
 .ourPage {
   padding: 0 120px;
+  height: 730px;
   min-height: 730px;
   width: 100vw;
   position: relative;
@@ -134,7 +135,7 @@
 }
 
 .ourPage .content .left-side h3 .link {
-  color: #F2F442;
+  color: #f2f442;
   text-decoration: none;
   position: relative;
 }
@@ -148,7 +149,7 @@
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #F2F442;
+  background-color: #f2f442;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.25s ease-out;

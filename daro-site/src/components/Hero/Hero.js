@@ -1,6 +1,7 @@
 import React from 'react';
-import {motion} from 'framer-motion';
 import './Hero.css';
+import HeaderAnim from './HeaderAnim/HeaderAnim';
+import { motion } from 'framer-motion';
 
 
 const Hero = () => {
@@ -47,25 +48,28 @@ const Hero = () => {
 
         <div className='hero-top'>
 
-            <div className='side left'>
+            <div className='side left-side'>
+
                 <motion.h1
-                initial={{opacity: 0, y:-60}}
-                animate={{opacity: 1, y:0}}
-                transition={{duration: 0.9}}
-                >creăm branduri <br /> <span>cu viitor</span>
+                    initial={{opacity: 0, y:-60}}
+                    animate={{opacity: 1, y:0}}
+                    transition={{duration: 0.9}}>
+                    creăm branduri <br /><span>cu viitor</span>
                 </motion.h1>
                 
                
                 <motion.button type='button'
-                initial={{opacity: 0, y:-60}}
-                animate={{opacity: 1, y:0}}
-                transition={{duration: 0.2}}
-                >Sună acum</motion.button>
+                    initial={{opacity: 0, y:-60}}
+                    animate={{opacity: 1, y:0}}
+                    transition={{duration: 0.2}}>
+                    Sună acum
+                </motion.button>
+
             </div>
 
 
             <div className='side right-side'>
-                
+                <HeaderAnim />
             </div>
 
         </div>
@@ -73,7 +77,7 @@ const Hero = () => {
         <div className='hero-bot'>
            {services.map((service,i) => (
                <div className="translated">
-                <motion.div
+                <div
                     initial={{opacity: 0, y:60}}
                     animate={{opacity: 1, y:0}}
                     transition={{duration: 0.9, delay: i * 0.2}} 
@@ -85,7 +89,7 @@ const Hero = () => {
                     
                     <h3>{service.title}</h3>
                     
-                </motion.div>
+                </div>
 
                </div>
                
