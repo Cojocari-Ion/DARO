@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.whyUs .clients-container {
+  width: 100vw;
+  padding: 0 120px;
+}
+
 .whyUs .floated-bg {
   position: absolute;
   width: 100vw;
@@ -67,6 +72,7 @@
   min-width: 433px;
   max-width: 433px;
   height: 256px;
+  margin-top: 10px;
   margin-right: 20px;
 }
 
@@ -75,8 +81,8 @@
   min-width: 100%;
   min-height: 100%;
   padding: 30px;
-  -webkit-box-shadow: 4px 4px 37px 5px rgba(0, 0, 0, 0.18);
-  box-shadow: 4px 4px 37px 5px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
@@ -124,5 +130,34 @@
 
 .whyUs .right {
   right: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .whyUs {
+    padding: 0 !important;
+  }
+  .whyUs .floated-bg {
+    left: 80px !important;
+  }
+  .whyUs .elements {
+    padding: 0 !important;
+  }
+  .whyUs .clients-container {
+    width: 100vw !important;
+    padding: 0 80px !important;
+  }
+  .whyUs .elements {
+    padding: 0 !important;
+  }
+  .whyUs .elements .container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    min-width: 1300px !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .whyUs .elements .container::-webkit-scrollbar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=WhyUs.css.map */

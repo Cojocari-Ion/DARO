@@ -12,6 +12,7 @@
     rgba(143, 175, 255, 0.384) 18%,
     rgba(6, 72, 236, 0) 100%
   );
+
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   z-index: 2000;
@@ -87,8 +88,8 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  nav {
-    padding: 0 20px;
+@media only screen and (max-width: 1300px) {
+  .navbar {
+    padding: 0 80px;
   }
 }

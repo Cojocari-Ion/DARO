@@ -141,7 +141,7 @@
 }
 
 .ourPage .content .left-side h3 .link:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 100%;
   -webkit-transform: scaleX(0);
@@ -315,5 +315,11 @@
 .ourPage .content .right-side .posts-container .bot {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
+}
+
+@media only screen and (max-width: 1300px) {
+  .ourPage .content {
+    padding: 0 80px !important;
+  }
 }
 /*# sourceMappingURL=OurPage.css.map */

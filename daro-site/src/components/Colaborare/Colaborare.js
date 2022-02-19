@@ -64,7 +64,7 @@ const Colaborare = () => {
       
       <div className='container'>
 
-        <motion.h3 ref={ref} animate={tittleAnimation}>cum are loc <span>colaborarea?</span></motion.h3>
+        <motion.h3 ref={ref} animate={tittleAnimation}>cum are loc <br /> <span>colaborarea?</span></motion.h3>
         <motion.div ref={ref} animate={tittleAnimation} className='divider'></motion.div>
         
         <ColabItems />

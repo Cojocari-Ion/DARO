@@ -2,7 +2,6 @@
   width: 800px;
   height: 260px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .colab-items-container .colab-items {
@@ -96,8 +95,8 @@
   height: 115px;
   background-color: #0648ec;
   margin: 30px auto;
-  -webkit-box-shadow: 8px 8px 0px 0px #F2F442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 8px 8px 0px 0px #F2F442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 8px 8px 0px 0px #f2f442, 8px 8px 8px 0px rgba(0, 0, 0, 0.45);
 }
 
 .colab-items-container .text p {

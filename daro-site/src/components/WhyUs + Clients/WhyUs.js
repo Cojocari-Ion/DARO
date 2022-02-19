@@ -115,7 +115,11 @@ const WhyUs = () => {
     
 
     <div className='elements'>
-    <Clients/>
+        
+        <div className='clients-container'>
+            <Clients/>
+
+        </div>
     
         <h2>
             de ce <br></br> <span>daro agency?</span>
