@@ -2,7 +2,6 @@
   float: bottom;
   width: auto;
   background: #f9f9f9;
-  z-index: 10;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
   padding: 10px;

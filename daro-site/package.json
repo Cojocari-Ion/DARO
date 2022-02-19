@@ -22,6 +22,7 @@
     "react-scripts": "5.0.0",
     "react-scroll-motion": "^0.2.1",
     "react-scroll-parallax": "^3.0.2",
+    "reactjs-popup": "^2.0.5",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },

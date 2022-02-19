@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 const ContactForm = () => {
@@ -16,7 +18,7 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_3ijxasn', 'template_gt5xz5t', form.current, 'user_0nogeYHI0ZhLQWp4PM2s0')
+    emailjs.sendForm('service_3ijxasn', 'template_gt5xz5t', form.current,/* 'user_0nogeYHI0ZhLQWp4PM2s0' */)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -72,34 +74,34 @@ const ContactForm = () => {
 
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
 
-            <div className='form-container'>
+          <div className='form-container'>
 
-              <div className="sides left">
-                  
-                  <span className='form-heading'>
-                  Introduceți datele personale:
-                  </span>
-
-                  <input type="text" id='fname' name='fname' placeholder='Prenume' />
-
-                  <input type="text" id='lname' name='lname' placeholder='Numele' />
-
-                  <input type='email' id='email' name='email' placeholder='email@gmail.com' />
-
-              </div>
-
-              <div className="middle"></div>
-
-              <div className="sides right">
+            <div className="sides left">
+                
                 <span className='form-heading'>
-                  Introduceți mesajul:
+                Introduceți datele personale:
                 </span>
 
-                <textarea placeholder='Scrie mesajul aici' name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="text" id='fname' name='fname' placeholder='Prenume' />
 
-              </div>
+                <input type="text" id='lname' name='lname' placeholder='Numele' />
 
-            </div>    
+                <input type='email' id='email' name='email' placeholder='email@gmail.com' />
+
+            </div>
+
+            <div className="middle"></div>
+
+            <div className="sides right">
+              <span className='form-heading'>
+                Introduceți mesajul:
+              </span>
+
+              <textarea placeholder='Scrie mesajul aici' name="message" id="message" cols="30" rows="10"></textarea>
+
+            </div>
+
+          </div>   
 
           <button type='submit'>Trimite</button>
 

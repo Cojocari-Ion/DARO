@@ -74,11 +74,33 @@
 
 .design-section .elements .left-side .posts {
   width: 100%;
-  height: 470px;
+  height: 520px;
   margin-top: 200px;
-  background-color: #f9f9f9;
+  margin-left: 4px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.design-section .elements .left-side .posts .image-container {
+  width: 250px;
+}
+
+.design-section .elements .left-side .posts .image-container img {
+  outline: 6px solid #dadada;
+  outline-offset: 0px;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+.design-section .elements .left-side .posts .image-container:nth-child(n + 3) {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .design-section .elements .right-side h4 {

@@ -75,3 +75,7 @@ $grayColor: #dadada;
 $padding1: 0 120px;
 
 $floats: 120px;
+
+@media only screen and (max-width: 1200px) {
+  $padding1: 0 100px;
+}

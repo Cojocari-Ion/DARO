@@ -1,7 +1,9 @@
 import React from 'react';
 import './Hero.css';
+import { useState, useEffect } from 'react';
 import HeaderAnim from './HeaderAnim/HeaderAnim';
 import { motion } from 'framer-motion';
+import Popup from './Popup/Popup';
 
 
 const Hero = () => {
@@ -40,11 +42,28 @@ const Hero = () => {
         },
 
     ]
- 
 
+    const [isOpened, setIsOpened] = useState(false);
+
+    const changeOpened =()=> {
+        setIsOpened(!isOpened)
+    }
+
+
+    useEffect(() => {
+
+        const timer = setTimeout(() => {
+            changeOpened()
+          }, 10000);
+
+        return () => clearTimeout(timer);
+
+    }, [])
+ 
   return (
      <div className='Hero'>
 
+        
 
         <div className='hero-top'>
 
@@ -75,7 +94,7 @@ const Hero = () => {
         </div>
 
         <div className='hero-bot'>
-           {services.map((service,i) => (
+           {services.map((service, i) => (
                <div className="translated">
                 <div
                     initial={{opacity: 0, y:60}}
@@ -95,6 +114,8 @@ const Hero = () => {
                
            ))}
         </div>
+
+       <Popup changeOpened={changeOpened} isOpened={isOpened} />
 
     </div> 
   )

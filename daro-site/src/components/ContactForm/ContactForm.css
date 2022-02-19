@@ -158,6 +158,14 @@
   background-color: #dadada;
 }
 
+.contact-section .elements .contact-form .popup {
+  opacity: 0.3;
+}
+
+.contact-section .elements .contact-form .popup .modal {
+  font-size: 12px;
+}
+
 .contact-section .elements .contact-form button {
   background: #0648ec;
   color: #f9f9f9;

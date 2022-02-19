@@ -25,7 +25,12 @@ const InstaStories = ({project}) => {
             <div className="sides left-side">
 
                 <div className="posts">
-                    
+                    {project.stories.map((post) => (
+                        <div className='image-container'>
+                            <img width='180px' src={post.img} alt={post.img} />
+
+                        </div>
+                    ))}
                 </div>
 
             </div>

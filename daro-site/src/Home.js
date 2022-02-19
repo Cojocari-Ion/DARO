@@ -7,8 +7,16 @@ import Slogan from './components/Slogan/Slogan';
 import OurPage from './components/ourPage/OurPage';
 import Projects from './components/Projects/Projects';
 import ContactForm from './components/ContactForm/ContactForm';
+import { useEffect } from 'react';
 
 const Home = () => {
+
+  useEffect(() => {
+      
+    window.scrollTo(0, 0)
+   
+  }, []);
+  
   return ( 
   
     <div className="home">

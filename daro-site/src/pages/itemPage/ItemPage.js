@@ -5,13 +5,20 @@ import './ItemPage.css';
 import HeaderSection from './HeaderSection/HeaderSection';
 import DesignSection from './DesignSection/DesignSection';
 import InstaStories from './InstaStories/InstaStories';
+import { useEffect } from 'react';
 
 
 const ItemPage = () => {
 
     const { id } = useParams();
     const project = portofolioItems[id];
-    console.log(project);
+  
+
+    useEffect(() => {
+      
+      window.scrollTo(0, 0)
+     
+  }, []);
 
   return (
 
